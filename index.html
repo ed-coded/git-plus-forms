@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="src/scripts.js" as="script">
+    <link rel="preload" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Lato|Montserrat&display=swap">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Login forms</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="src/images/bg-img-2.jpg" alt="component background image">
+        </section>  
+        <section>
+            <!-- Signup Form -->
+            <div id="signup">
+                <form action="index.html" id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-username">Username</label>
+                        <input type="text" name="username" id="signup-username"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" name="email" id="signup-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" name="password" id="signup-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="signup-confirm">
+                    </div>
+                    <button id="signup-submit">Signup</button>
+                    <div class="toggle">Already have an account? <span onclick="showLogin()">Login</span></div>
+                </form>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login">
+                <form action="index.html" id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" name="email" id="login-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" name="password" id="login-password">
+                    </div>
+                    <button id="login-submit">Login</button>
+                    <div class="toggle">Don't have an account? <span onclick="showSignup()">Sign Up</span></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts.js"></script>
+</body>
+</html>

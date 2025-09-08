@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto;
+    /* border: 2px solid black; */
+    align-items: center;
+    width: 70vw;
+    height: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.message p {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.message p span {
+    color: orangered;
+}
+
+button {
+    position: relative;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: .3rem;
+    background-color: orangered;
+    font-weight: 700;
+    color: white;
+    border: none;
+    align-items: center;
+}
+
+button:hover {
+    background-color: red;
+}
