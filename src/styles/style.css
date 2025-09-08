@@ -18,6 +18,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: white;
+    border-radius: .5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -99,4 +100,8 @@ form {
     display: block;
     margin: 1rem auto;
     margin-top: -.5rem;
+}
+
+.toggle {
+    text-align: center;
 }
